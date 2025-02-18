@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative vs Absolute</title>
+    <style>
+        .container {
+            position: relative; /* Acts as a reference for the absolute box */
+            width: 300px;
+            height: 200px;
+            background-color: lightgray;
+            margin-bottom: 20px;
+        }
+
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 30px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="relative-box">Relative</div>
+    </div>
+
+    <div class="container">
+        <div class="absolute-box">Absolute</div>
+    </div>
+
+</body>
+</html>
