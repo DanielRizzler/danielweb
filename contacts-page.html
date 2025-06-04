@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <section class="contact-section">
+        <div class="contact-info">
+            <a href="index.html" class="back-home">Back Home</a>
+            <h2>Contacts</h2>
+            <p>We're here to assist you with questions about our services, investing, and navigating this rapidly changing market.</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:support@eurevo.net">support@eurevo.net</a></li>
+                <li><strong>Address:</strong> Cimburkova 916/8, Žižkov, 130 00 Prague 3</li>
+                <li><strong>Website:</strong> <a href="https://eurevo.net" target="_blank">eurevo.net</a></li>
+            </ul>
+        </div>
+        <div class="contact-map">
+            <iframe
+                src="https://www.google.com/maps?q=Cimburkova+916%2F8%2C+%C5%BDi%C5%BEkov%2C+130+00+Prague+3%2C+Czech+Republic&output=embed"
+                width="350"
+                height="250"
+                style="border:0; border-radius: 8px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="footer-down">
+            <div class="footer-down-left">Copyright © 2024 — All rights reserved.</div>
+            <div class="footer-down-right">
+                <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                <a href="kyc.html" class="footer-link">Eurevo AML/KYC POLICY</a>
+                <a href="terms-conditions.html" class="footer-link">Terms & Conditions</a>
+            </div>
+        </div>
+        <div class="footer-up">
+            EUREVO Evolution s.r.o., is a limited liability company registered in Czech Republic (registration number 21462151). The Company is regulated and supervised by the Financial Analytical Office (FAU) to provide services related to virtual assets.
+        </div>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+            max-width: 100vw;
+            overflow-x: hidden !important; /* Prevent horizontal scrolling */
+            box-sizing: border-box;
+        }
+
+        .back-home {
+            color: #fff !important;
+            text-decoration: none;
+            display: block;
+            margin-bottom: clamp(1rem, 2vw, 1.5rem);
+            font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+        }
+
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: clamp(1.5rem, 3vw, 2rem);
+            background: #000000;
+            padding: clamp(1rem, 3vw, 2rem);
+            border-radius: 12px;
+            max-width: 900px;
+            margin: clamp(1rem, 3vw, 2rem) auto;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        .contact-info {
+            flex: 1 1 40%;
+            min-width: 300px;
+        }
+
+        .contact-info h2 {
+            margin-top: 0;
+            color: #fff;
+            font-size: clamp(1.25rem, 4vw, 1.75rem);
+            margin-bottom: clamp(0.5rem, 2vw, 1rem);
+            white-space: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.3;
+        }
+
+        a {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .contact-info p {
+            font-size: clamp(0.85rem, 2.2vw, 1.1rem);
+            line-height: 1.6;
+            white-space: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            margin: clamp(0.5rem, 1.5vw, 0.75rem) 0;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            margin: clamp(0.5rem, 2vw, 1rem) 0;
+        }
+
+        .contact-info li {
+            margin-bottom: clamp(0.4rem, 1.2vw, 0.75rem);
+            font-size: clamp(0.85rem, 2.2vw, 1.1rem);
+            white-space: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.5;
+        }
+
+        .contact-info a {
+            color: #80cfff;
+            text-decoration: none;
+            font-weight: 500;
+            white-space: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-map {
+            flex: 1 1 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            box-sizing: border-box;
+        }
+
+        .contact-map iframe {
+            border-radius: 8px;
+            width: 100%;
+            height: clamp(200px, 40vw, 300px);
+        }
+
+        .footer {
+            margin-top: clamp(2rem, 5vw, 78px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: clamp(1.5rem, 4vw, 52px);
+            width: 100%;
+            max-width: 100vw;
+            box-sizing: border-box;
+            padding: clamp(1rem, 3vw, 30px) clamp(1rem, 2vw, 20px);
+            overflow-x: hidden !important; /* Prevent horizontal scroll */
+        }
+
+        .footer-up {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.40);
+            font-size: clamp(10px, 2.2vw, 16px);
+            line-height: 1.4; /* Increased for better readability */
+            letter-spacing: -0.3px; /* Adjusted for tighter spacing */
+            max-width: 1000px;
+            width: 100%; /* Ensure it fits within parent */
+            white-space: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .footer-down {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1000px;
+            flex-wrap: wrap;
+            gap: clamp(1rem, 2vw, 20px);
+            box-sizing: border-box;
+        }
+
+        .footer-down-left {
+            color: rgba(255, 255, 255, 0.40);
+            font-size: clamp(10px, 2.2vw, 16px);
+            line-height: 1.4; /* Increased for better readability */
+            letter-spacing: -0.3px; /* Adjusted for tighter spacing */
+            text-decoration: none;
+            white-space: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .footer-down-right {
+            display: flex;
+            flex-direction: row;
+            gap: clamp(0.8rem, 1.8vw, 32px);
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: rgba(255, 255, 255, 0.40);
+            font-size: clamp(10px, 2.2vw, 16px);
+            line-height: 1.4; /* Increased for better readability */
+            letter-spacing: -0.3px; /* Adjusted for tighter spacing */
+            text-decoration: none !important;
+            white-space: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .footer-link:hover {
+            text-decoration: none !important;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            body {
+                padding: clamp(0.5rem, 1.5vw, 1rem); /* Reduce padding on mobile */
+            }
+
+            .contact-section {
+                gap: clamp(1rem, 2vw, 1.5rem);
+                padding: clamp(0.8rem, 2vw, 1.5rem);
+                margin: clamp(0.8rem, 2vw, 1.5rem) auto;
+            }
+
+            .contact-info {
+                flex: 1 1 100%;
+                min-width: 0; /* Allow full shrink for smaller screens */
+            }
+
+            .contact-info h2 {
+                margin-bottom: clamp(0.4rem, 1.5vw, 0.8rem);
+            }
+
+            .contact-info p {
+                margin: clamp(0.4rem, 1.2vw, 0.6rem) 0;
+            }
+
+            .contact-info li {
+                margin-bottom: clamp(0.3rem, 1vw, 0.5rem);
+            }
+
+            .contact-map {
+                flex: 1 1 100%;
+                justify-content: center;
+            }
+
+            .footer {
+                margin-top: clamp(1.5rem, 4vw, 2rem);
+                gap: clamp(1rem, 3vw, 1.5rem);
+                padding: clamp(0.8rem, 2vw, 1.5rem) clamp(0.5rem, 1.5vw, 1rem);
+            }
+
+            .footer-down {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-down-right {
+                justify-content: center;
+                gap: clamp(0.5rem, 1.5vw, 0.8rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-map iframe {
+                height: clamp(150px, 30vw, 200px);
+            }
+
+            .contact-info h2 {
+                font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+            }
+
+            .contact-info p, .contact-info li {
+                font-size: clamp(0.75rem, 2vw, 0.9rem);
+                line-height: 1.5; /* Adjusted for better spacing */
+            }
+        }
+    </style>
+</body>
+</html>

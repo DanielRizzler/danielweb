@@ -1,0 +1,135 @@
+.faq-padding {
+    padding-top: 92px;
+    padding-right: 32px;
+    padding-left: 32px;
+    width: 100%; /* Changed to 100% to respect parent container width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.faq-section {
+    width: 100%; /* Default to full width for responsiveness */
+    max-width: 1000px; /* Maintain original width on larger screens */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+@media (max-width: 1010px) {
+    .faq-section {
+        flex-direction: column; /* Stack items vertically */
+        gap: 32px; /* Adjust gap for better spacing */
+        justify-content: center; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        width: 100%; /* Ensure full width */
+        height: auto; /* Let the height adjust to content */
+    }
+
+    .faq-text, .faq-questions {
+        width: fit-content; /* Make child elements responsive */
+        text-align: center; /* Center text for better appearance */
+    }
+
+    .faq-text {
+        align-items: center;
+    }
+
+    .faq-padding {
+        padding-right: 16px; /* Reduce padding slightly for smaller screens */
+        padding-left: 16px;
+    }
+}
+
+.faq-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-title {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 135.915%;
+    letter-spacing: -1.29px;
+    background: linear-gradient(180deg, #999 0%, #FFF 34.4%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 450px;
+}
+
+.faq-alt-text {
+    max-width: 310px;
+    color: #D0D1D2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 145%;
+    letter-spacing: -0.64px;
+    color: rgba(208, 209, 210, 1);
+}
+
+.faq-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 100%; /* Default to full width for responsiveness */
+    max-width: 476px; /* Maintain original width on larger screens */
+}
+
+.faq-question {
+    padding: 18px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #161720;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column; /* Stack question and answer vertically */
+    cursor: pointer; /* Indicate it's clickable */
+}
+
+.faq-answer {
+    max-height: 0; /* Hidden by default */
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); /* Smooth expansion */
+    width: 100%;
+    margin-top: 0;
+    color: #D0D1D2; /* Match text color to other elements */
+    font-size: 16px;
+    line-height: 145%;
+    text-align: left;
+}
+
+.faq-answer p {
+    margin: 10px 0 0 0; /* Spacing for readability */
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 14px;
+}
+
+/* When the question is active (expanded), show the answer */
+.faq-question.active .faq-answer {
+    max-height: 100px; /* Adjust based on content height */
+}
+
+/* Smooth rotation for the arrow */
+.toggle-arrow {
+    transition: transform 0.3s ease; /* Smooth rotation animation */
+}
+
+.faq-question.active .toggle-arrow {
+    transform: rotate(180deg);
+}
+
+.faq-question-text-varnele {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+}
+
+.faq-question-text {
+    text-align: left;
+}
