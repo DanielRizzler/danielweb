@@ -1,0 +1,62 @@
+.footer {
+    margin-top: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 52px;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 30px 20px; /* Adds padding to prevent content from touching edges */
+}
+
+.footer-up {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.40);
+    font-size: clamp(12px, 2.5vw, 16px); /* Responsive font size */
+    line-height: 118.178%;
+    letter-spacing: -0.48px;
+    max-width: 1000px; /* Ensures text doesn't overflow */
+}
+
+.footer-down {
+    display: flex;
+    flex-direction: row; /* Default to row layout */
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px; /* Limits maximum width but allows shrinking */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px; /* Adds spacing when wrapped */
+    box-sizing: border-box;
+}
+
+.footer-down-left {
+    color: rgba(255, 255, 255, 0.40);
+    font-size: clamp(12px, 2.5vw, 16px); /* Responsive font size */
+    line-height: 118.178%;
+    letter-spacing: -0.48px;
+    text-decoration: none;
+    white-space: normal; /* Allows text to wrap */
+}
+
+.footer-down-right {
+    display: flex;
+    flex-direction: row; /* Default to row layout */
+    gap: 32px;
+    flex-wrap: wrap; /* Allows links to wrap on smaller screens */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .footer-down {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center; /* Center content for better readability */
+        text-align: center;
+    }
+
+    .footer-down-right {
+        justify-content: center; /* Center the links when wrapped */
+        gap: 16px; /* Reduce gap on smaller screens */
+    }
+}
