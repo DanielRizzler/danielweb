@@ -3,7 +3,7 @@
     display: flex;
     gap: 92px;
     width: 100vw;
-    min-height: 500px; /* Ensures the section has enough height to display the red box */
+    height: 600px;
     overflow: hidden;
     position: relative;
     align-items: center;
@@ -12,10 +12,10 @@
 
 .testimonial-bg-container {
     width: 100vw;
-    height: 100%;
+    height: auto;
     position: absolute; /* Explicitly absolute for clarity */
     z-index: -50; /* Stays behind other content */
-    top: 65%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%); /* Centers horizontally and vertically */
 }
