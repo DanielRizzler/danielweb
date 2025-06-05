@@ -19,7 +19,6 @@
 body {
   margin: 0px;
   background-color: black;
-  width: 100vw;
   overflow-x: hidden;
   background-image: url('thumbnails/Golden-Rectangle.png');
   background-size: cover;
